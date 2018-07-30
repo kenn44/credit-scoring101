@@ -1,0 +1,199 @@
+\documentclass[12pt,a4paper]{amsart}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage[latin2]{inputenc}
+\usepackage{t1enc}
+\usepackage[mathscr]{eucal}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{pict2e}
+\usepackage{epic}
+\numberwithin{equation}{section}
+\usepackage[margin=2.9cm]{geometry}
+\usepackage{epstopdf} 
+
+ \def\numset#1{{\\mathbb #1}}
+
+ 
+
+\theoremstyle{plain}
+\newtheorem{Th}{Theorem}[section]
+\newtheorem{Lemma}[Th]{Lemma}
+\newtheorem{Cor}[Th]{Corollary}
+\newtheorem{Prop}[Th]{Proposition}
+
+ \theoremstyle{definition}
+\newtheorem{Def}[Th]{Definition}
+\newtheorem{Conj}[Th]{Conjecture}
+\newtheorem{Rem}[Th]{Remark}
+\newtheorem{?}[Th]{Problem}
+\newtheorem{Ex}[Th]{Example}
+
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\Hom}{{\rm{Hom}}}
+\newcommand{\diam}{{\rm{diam}}}
+\newcommand{\ovl}{\overline}
+%\newcommand{\M}{\mathbb{M}}
+
+\begin{document}
+
+\title{Impact of alternative data and technics in building credit scorecard: merged scoring}
+
+
+\author[\\]{Kenneth Assogba}
+
+\address{}
+
+\email{kennethassogba@gmail.com}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ \subjclass[2010]{Primary: 68T01. Secondary: 68T42}
+
+
+
+ \keywords{nano credit, credit scoring model, credit risk modelling, machine learning, global financial inclusion} 
+
+
+
+\begin{abstract}
+The aim of this work is to study impact of new data and technics in building credit scorecard.
+The final goal is to obtain a service that will evaluate creditworthiness of people not eligible for banking services 
+and therefore improve their access to loans.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction} Credit requests, of new and existing customers, are
+often evaluated by classical discrimination rules based on customers information. However, these kinds of strategies have serious limits.
+Many financial service providers see people on the sidelines as risky partly because
+they lack the data or other sources of information needed to identify high potential customers and their borrowing capacity.
+
+
+
+\section{Problem}
+\begin{itemize}
+ \item Lack of traditional data to help build robust credit risk score system.
+ \item Most credit risk systems are not designed keeping the rural segment in mind.
+ \item Hard for financial institutions to build right combination of technology and talent.
+ \item Hard to keep up with fast changing scientific and regulatory knowledge.
+\end{itemize}
+
+
+\section{Solution Approch}
+\begin{itemize}
+ \item Utilises remote sensing data alongside a range of traditional and alternative data points to assess a target population creditworthiness.
+\end{itemize}
+
+\section{Benefits}
+
+\subsection{To Lending Organization}
+\begin{itemize}
+ \item Increase in approval rates
+ \item Decrease in default rates
+ \item Reduction in time it takes to process
+ \item Increase automation and remove human errors
+ \item Non-linear approach can increases acceptance rates and decreases default
+\end{itemize}
+
+\subsection{To Target Population}
+\begin{itemize}
+ \item Increased access to loan
+ \item Reduction in time it takes to process
+ \item Build score which can help bring them into formal lending system for larger loans in future
+\end{itemize}
+
+\section{Program}
+
+\subsection{Completed}
+This section presents the work that was done in the first week.\\
+\begin{enumerate}
+ \item Review CGAP's nano credit literature
+ \item Do some research on KYC
+ \item Read articles on credit scoring
+\end{enumerate}
+
+We have identified the data used in a classic scoring and the altinative data that we can introduce.\\
+\begin{enumerate}
+   \item Classic Data
+   \begin{itemize}
+     \item Applicant Data
+     \item Credit Bureau Data
+   \end{itemize}
+   \item Non-Traditional Data
+   \begin{itemize}
+     \item Telecom Data
+     \item Social network Data
+     \item Mobile Data     
+   \end{itemize}
+\end{enumerate}
+
+On the similar projects that we have already been able to study, the target population was generally reduced and having common characteristics.\\
+For example:
+\begin{itemize}
+ \item Smallholder families
+ \item Young graduate
+ \item Young entrepreneur
+ \item ...
+\end{itemize}
+So we wonder if we should not restrict the target population.
+
+\subsection{Release}
+This section presents the work that is going on.\\
+Analyse the existing lending data and study which alternative data sources,
+could improve the predictive power of lending decisions.\\
+Studies of the reports and data of the World Bank and the CGAP
+\begin{itemize}
+ \item CGAP Smallholder Families Data Hub
+ \item FY 2018 Benin Country Opinion Survey Report
+ \item Benin - Global Financial Inclusion (Global Findex) Database 2014
+ \item Benin - Global Financial Inclusion (Global Findex) Database 2018
+\end{itemize}
+
+
+\subsection{Backlog}
+This section presents the work to be done.\\
+\begin{itemize}
+ \item Analysis of existing solutions
+ \item Comparison of techniques and algorithms used in scoring.
+\begin{itemize}
+  \item decision trees (Breiman et al., 1984)
+  \item neural networks (Mcculloch and Pitts, 1943)
+  \item discriminant analysis (Fisher, 1936; Mahalanobis, 1936)
+  \item logistic regression (Cox, 1970; Cox and Snell, 1989)
+  \item discriminant analysis and logistic regression
+  \item ...
+\end{itemize}
+ \item Tests
+ \item Determine the tools to collect the data needed to train the model
+
+\end{itemize}
+
+
+
+\begin{thebibliography}{99} 
+
+\bibitem{cgap1} CGAP (Consultative Group to Assist the Poor): \textit{CGAP and Harvesting Explore Use of Alternative Data in Credit Scores}, \begin{verbatim} cgap.org/news/cgap-and-harvesting-explore-use-alternative-data-credit-scores
+\end{verbatim}
+\bibitem{ben1} Farid Beninel, Waad Bouaguel, Ghazi Belmufti: (Consultative Group to Assist the Poor): \textit{Transfer Learning Using Logistic Regression in Credit Scoring}
+\bibitem{bun1} Rory P. Bunker, M. Asif Naeem, Wenjun Zhang: \textit{Improving a Credit Scoring Model by Incorporating Bank Statement Derived Features}
+
+\end{thebibliography}
+
+
+
+\end{document}
